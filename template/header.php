@@ -39,9 +39,9 @@
     <body class="grey lighten-4">
         <nav>
             <div class="nav-wrapper indigo lighten-2">
-                <a class="brand-logo"><i class="material-icons">devices</i>Ejercicios en PHP</a>
+                <a class="brand-logo"><i class="material-icons">devices</i>PHP Exercise</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="calculadora.php" class="btn white black-text">Calculadora</a></li>
+                    <li><a href="calculadora.php" class="btn white black-text">Calculator</a></li>
                 </ul>
             </div>
         </nav>
