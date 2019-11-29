@@ -85,25 +85,31 @@ class Calculator {
                 
                 $calculator = new Calculator($number1, $number2);
 
-                switch ($operator) {
-                    case "Select one of the following.":
-                        echo "You have to select one operation.";
+                if(empty($number1) || empty($number2)) {
+                    echo "You need to enter two numbers. One on each input box.";
+                } else if(empty($operator)) {
+                    echo "You need to choose an operation.";
+                } else {
+                    switch ($operator) {
+                        case "Select one of the following.":
+                            echo "You have to select one operation.";
+                            break;
+                        case "Add":
+                            echo $number1 . " + " . $number2 . " = " . $calculator->add();
                         break;
-                    case "Add":
-                        echo $number1 . " + " . $number2 . " = " . $calculator->add();
-                    break;
-                    case "Subtract":
-                        echo $number1 . " - " . $number2 . " = " . $calculator->subtract();
-                    break;
-                    case "Multiply":
-                        echo $number1 . " * " . $number2 . " = " . $calculator->multiply();
-                    break;
-                    case "Divide":
-                        echo $number1 . " / " . $number2 . " = " . $calculator->divide();
-                    break;
-                    case "Odd/Even":
-                        echo "Number " . $number1 . " is " . $calculator->odd_even_num1() . ", while number " . $number2 . " is " . $calculator->odd_even_num2() . ".";
-                    break;
+                        case "Subtract":
+                            echo $number1 . " - " . $number2 . " = " . $calculator->subtract();
+                        break;
+                        case "Multiply":
+                            echo $number1 . " * " . $number2 . " = " . $calculator->multiply();
+                        break;
+                        case "Divide":
+                            echo $number1 . " / " . $number2 . " = " . $calculator->divide();
+                        break;
+                        case "Odd/Even":
+                            echo "Number " . $number1 . " is " . $calculator->odd_even_num1() . ", while number " . $number2 . " is " . $calculator->odd_even_num2() . ".";
+                        break;
+                    }
                 }
             }
             ?>
