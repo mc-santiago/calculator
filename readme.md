@@ -2,14 +2,14 @@
 
 With this calculator you can add, subtract, multiply, divide and find out if the numbers are odd or even. 
 
-## Database/Server
+## Server
 
-In order to connect your own database connection you may add a new file and use the following code. Just insert your own servername, username, password and database. 
+In order to connect to your own server, you may add a new file and use the following code. Just insert your own servername, username and password. 
 
 ```
 <?php
-// connect to database
-$conn = mysqli_connect('servername', 'username', 'password', 'database');
+// connect to server
+$conn = mysqli_connect('servername', 'username', 'password');
 
 // Check Connection
 if(!$conn){
